@@ -1,6 +1,7 @@
 # Uses of for loop in playbook
 ---
-- hosts : test-servers
+- name : Directory create
+  hosts : test-servers
   become : true
   vars :
     ansible_become_pass : root
