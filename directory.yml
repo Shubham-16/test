@@ -1,10 +1,7 @@
 # Uses of for loop in playbook
 ---
-- name : Directory create
-  hosts : test-servers
+- hosts : localhost
   become : true
-  vars :
-    ansible_become_pass : root
   tasks :
    - name : Make 3 directories
      command : mkdir "{{ item }}"
